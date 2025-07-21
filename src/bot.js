@@ -23,7 +23,7 @@ bot.on("text", async (ctx) => {
   if (!validUrl(url)) {
     return ctx.reply("❌ Faqat Instagram, YouTube yoki TikTok link yuboring.");
   }
-
+      
   const id = Date.now().toString(); // Unikal ID
   links.set(id, url);
 
@@ -71,4 +71,4 @@ bot.action(/(video|audio):(.+)/, async (ctx) => {
 });
 
 bot.launch();
-console.log("✅ Downloader Bot optimallashtirilgan holda ishga tushdi...");
+console.log("✅ Downloader Bot optimallashtirilgan holda ishga tushdi...")
